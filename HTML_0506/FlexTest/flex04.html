@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex Box</title>
+
+    <style>
+        #container{
+            width: 900px;
+            height: 100vh;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: row;
+
+        }
+        div.items{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            color: white;
+            text-align: center;
+            line-height: 200px; 
+            margin: 10px;
+        }
+        div.items:nth-child(1){
+            flex-shrink: 1;
+        }
+        div.items:nth-child(2){
+            flex-shrink: 3;
+        }
+        div.items:nth-child(3){
+            flex-shrink: 1;
+        }
+        div.items:nth-child(4){
+            flex-shrink: 0;
+        }
+        div.items:nth-child(5){
+            flex-shrink: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="items">item01</div>
+        <div class="items">item02</div>
+        <div class="items">item03</div>
+        <div class="items">item04</div>
+        <div class="items">item05</div>
+    </div>
+</body>
+</html>
